@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Absensi Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Daftar Absensi Mahasiswa</h2>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Mahasiswa</th>
+                <th>Status Kehadiran</th>
+            </tr>
+        </thead>
+        <tbody id="tabel-absensi">
+            <tr>
+                <td>Panji</td>
+                <td>
+                    <select class="pilih-status" data-nama="Panji">
+                        <option value="Hadir">Hadir</option>
+                        <option value="Izin">Izin</option>
+                        <option value="Sakit">Sakit</option>
+                        <option value="Alpa">Alpa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Dicky</td>
+                <td>
+                    <select class="pilih-status" data-nama="Dicky">
+                        <option value="Hadir">Hadir</option>
+                        <option value="Izin">Izin</option>
+                        <option value="Sakit">Sakit</option>
+                        <option value="Alpa">Alpa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bintang</td>
+                <td>
+                    <select class="pilih-status" data-nama="Bintang">
+                        <option value="Hadir">Hadir</option>
+                        <option value="Izin">Izin</option>
+                        <option value="Sakit">Sakit</option>
+                        <option value="Alpa">Alpa</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="btn-simpan">Simpan Absensi</button>
+
+    <div id="rekap-area" class="hidden">
+        <h3>Hasil Rekapitulasi:</h3>
+        <div id="hasil-rekap"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
